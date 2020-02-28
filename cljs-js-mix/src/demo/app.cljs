@@ -1,6 +1,6 @@
 (ns demo.app
   (:require
-   ["/js/bar" :as bar :refer (sum)]
+   ["/gen/bar" :as bar :refer (sum)]
    [clojure.test.check :as tc]
    [clojure.test.check.generators :as gen]
    [clojure.test.check.properties :as prop :include-macros true]))
