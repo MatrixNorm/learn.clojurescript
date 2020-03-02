@@ -1,3 +1,4 @@
 public/js
-biulds/
+builds/
 src/__gen__
+.clj-kondo/.cache/

@@ -1,0 +1,1 @@
+{:lint-as {defspec clojure.core/defn}}
