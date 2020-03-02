@@ -1,6 +1,11 @@
 {:source-paths ["src"]
  :dev-http {8080 "public"}
- :builds {:app {:target :browser
-                :output-dir "public/js"
-                :asset-path "/js"
-                :modules {:main {:entries [demo.app]}}}}}
+ :builds
+ {:app {:target :browser
+        :output-dir "public/js"
+        :asset-path "/js"
+        :modules {:main {:entries [demo.app]}}}
+  :gen-testing-1 {:target    :node-test
+                  :output-to "builds/node-tests.js"
+                  :ns-regexp "-test$"
+                  :autorun   true}}}
