@@ -14,3 +14,11 @@
 (defspec sort-is-idempotent 100
   (prop/for-all [v (gen/vector gen/int)]
                 (= (sort v) (sort (sort v)))))
+
+(def random-map
+  (gen/map (gen/one-of 
+            [gen/keyword gen/string gen/boolean gen/int gen/symbol]) gen/int))
+
+(defspec zipmap-keys-vals-consistency 100
+  (prop/for-all [m (gen/map (gen/one-of [gen/keyword gen/string gen/boolean gen/int gen/symbol]) gen/int)]
+                (= m (zipmap (keys m) (vals m)))))
