@@ -2,3 +2,5 @@ node_modules/
 public/
 .shadow-cljs/
 .cpcache/
+.clj-kondo/
+.calva/

@@ -1,0 +1,6 @@
+{:paths ["src"]
+
+ :deps
+ {org.clojure/clojurescript {:mvn/version "1.10.866"}
+  thheller/shadow-cljs {:mvn/version "2.14.5"}
+  datascript/datascript {:mvn/version "1.2.8"}}}
